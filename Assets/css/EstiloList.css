@@ -1,0 +1,862 @@
+
+body{
+	margin: 0px;
+	padding: 0px;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 100%;
+	padding-top: 50px;
+	background: #5f2c82;
+	background: -webkit-linear-gradient(to right, #49a09d, #5f2c82); 
+    background: linear-gradient(to right, #49a09d, #5f2c82); 
+
+	
+}
+
+
+
+
+.container-fluid {
+	max-width: 1200px;
+	margin: auto;
+}
+
+#domi-links2, #domi-content-restaurantes2{
+	display: none;
+}
+
+
+
+.font-impact{
+		font-family: impact, arial;
+}
+
+.font-white{
+	color: white;
+}
+
+.back{	
+	 /* background: url(../../media/img/mobile/f1.jpg) no-repeat center top fixed; */
+	  position: fixed;
+	  left: 0px;
+	  top: 0px;
+	  bottom: 0px;
+	  right: 0px;
+	  background-size:auto  100% ;
+	  z-index: 1;
+}
+
+.mask-modal{
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	right: 0px;
+	bottom: 0px;
+	display: block;
+	background: rgba(0,0,0,0.5);
+	z-index: 10000;
+	display: none;
+}
+
+.domi-modal{
+	position: fixed;
+	top:10%;
+	bottom: 10%;
+	left: 10%;
+	right: 10%;
+	padding: 30px;
+	z-index: 10001;
+	background: white;
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	-o-border-radius: 3px;
+	display: none;
+}
+
+.domi-modal-close{
+	position: absolute;
+	display:   block;
+	text-align: right;
+	font-size: 1.5em;
+	right: 10px;
+	top: 10px;		
+
+}
+.domi-modal-content{
+	position: absolute;
+	display: block;
+	top: 10%;
+	left: 10px;
+	right: 10px;
+	bottom: 10px;	
+	overflow: auto;
+	font-size: 1.3em;
+}
+		
+
+.domi-modal{
+	font-size: 1em;
+	text-align: justify;
+}
+.domi-modal h1{
+	font-size: 2em;
+	text-align: center;
+	display: block;
+}
+
+nav.domi-topnav{
+	  background-color: #AD0000;	  
+	  margin-bottom: 0px;
+	  padding-bottom: 0px;
+}
+
+a{
+
+	text-decoration: none;
+	color: grey;
+}
+a:hover{
+	color: black;
+	text-decoration: none;
+}
+a:visited{	
+	color: black;
+	text-decoration: none;
+}
+
+h1{padding: 0px;}
+h1{margin: 0px;}
+
+.domi-main-container{
+	z-index: 2;
+	position: relative;
+}
+
+/* ---------------------------------------------------------------- */
+/* TOP NAV GENERAL CSS */
+nav.domi-topnav{
+
+  background-color: #AD0000;
+  display: block;
+  min-height: 50px;
+  padding-top: 0.1px;
+  margin-top: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  position: relative;
+  position: fixed;
+  z-index: 10;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+
+}
+
+span.btn-menu-mobile{
+	background-color: #A60000;
+	height: 35px;
+	width: 35px;
+	padding: 5px;
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	-o-border-radius: 3px;
+	`position: relative;
+	float: right;
+	margin-top: 7px;
+	margin-right: 10px;
+	-webkit-transition: background-color 0.5s; /* For Safari 3.1 to 6.0 temporal es mejor cambio CSS*/
+}
+
+
+
+span.btn-menu-mobile:hover{
+	background-color: #660000;
+}
+
+span.line-menu-mobile{
+ position: relative;
+ width: 100%;
+ background-color: white;
+ height: 5px;
+ -webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-o-border-radius: 5px;
+ position: relative;
+ display: block;
+ margin-bottom: 20%;
+}	
+
+span.line-menu-mobile:last-child{
+	 margin-right: 0%;
+}
+
+.domi-logo{
+	 height: 40px;
+	 margin-top: 5px;
+	 margin-left: 5px;
+	 text-align: left;
+	 float: left;
+	 position: relative;
+}
+
+
+.domi-logo img{
+	height: 100%;
+}
+
+/* ---------------------------------------------------------------- */
+/* HEADER GENERAL  CSS */
+
+
+
+/* ---------------------------------------------------------------- */
+/*links*/
+
+.list-group a{
+	font-size: 1.4em; 
+}
+
+/* FOOTER SECTION 1  PRODUCTOS CSS */
+.domi-container-productos{
+
+	
+	min-height: 150px; 
+	background: #EEEEEE;
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	-o-border-radius: 3px;
+	margin-bottom: 10px;
+
+
+}
+.domi-restaurante-logo{
+ 	position: relative;
+ 	display: block;
+ 	text-align: center; 	
+ 	z-index: 1000;
+}
+
+.domi-restaurante-logo img{
+	width: auto;
+	height: auto;
+	max-width: 200px;
+	max-height: 133px;
+	min-width: 160px;
+	min-height: 100px;
+	height: 133px;
+	padding: 10px;
+	border: 1px solid #CCCCCC;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-o-border-radius: 10px;
+	border-radius: 10px;
+	margin-bottom: 10px;
+	background: transparent;
+	margin-top: 20px;
+}
+
+.domi-restaurante-content{
+	display: block;
+	margin-left: 20px;
+	font-size: 1.5em;
+	padding-left: 0px;
+}
+
+
+.domi-restaurante-cierra, .domi-restaurante-cierra2{
+	background-color: #50A950;
+	width: 164px;
+	color: white;
+	font-size: 2em;
+	padding: 5px 10px 5px 10px;
+	margin: auto; 
+	margin-top: -13px;
+	margin-bottom: 20px;
+	position: relative;
+	z-index: 2000;
+} 
+.domi-restaurante-cierra2{
+	background-color: #AD0000;
+	
+}
+
+.domi-time{
+	font-weight: 400;
+	font-size: 1.5em;
+	position: relative;
+	right: 4px;
+	top: 4px;
+	display: block;
+	text-align: right;
+	color: black;
+	font-weight: 900;
+
+}
+
+.domi-producto-ver{
+	width: 100%;
+	display: block;
+	margin: auto;
+	height: 40px;
+	border-radius: 8px;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	-o-border-radius: 8px;	
+	padding: 5px;
+	font-size: 1.2em;
+	margin-bottom: 10px;
+	background-color: #FBAE30;
+	color: black;
+	padding-left:5px;
+	padding-top: 7px;
+	position: relative;
+	border: none;	
+	font-weight: 600;
+	text-align: center;
+	/*background-image: url(../../media/img/mobile/busqueda2.png);
+	background-repeat: no-repeat;
+	background-position: 20px 10px;*/
+}
+
+/* ---------------------------------------------------------------- */
+/* FOOTER SECTION 2  COMO EMPRESA CSS */
+
+.domi-credits{
+	background-color: #AD0000;
+	text-align: center;
+	display: block;
+	padding: 10px;
+	color: white;
+	font-size: 1.1em;
+}
+/* ---------------------------------------------------------------- */
+/* FOOTER SECTION DISPOSITIVOS  MANAGE FOOTER O APARTE COMO EMPRESA CSS */
+
+footer.domi-footer{
+	background-color: black;
+	height: 60px;
+	position: fixed;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+	padding: 10px;
+	z-index: 1000;
+
+}
+
+
+/* ---------------------------------------------------------------- */
+/* FOOTER GENERAL  index1 CSS */
+
+footer.domi-apps{
+	position: relative;	
+	background-color: white;
+	display: block;	
+	padding: 10px;
+	padding-bottom: 50px;
+	text-align: center;
+}
+.domi-apps h2{
+	font-size: 2.4em;
+	font-weight: 900;
+}
+
+.domi-apps p{
+	font-size: 1.6em;
+	font-weight: 900;
+}
+
+.domi-apps img{
+	margin-right: 20px;
+	height: 40px;
+}
+
+.domi-apps img:last-child{
+	margin: 0px;
+}
+
+/* THAT ELEMENTS NOT SHOW ELEMENTS FOR MOBILE DIVICES  */
+
+
+.domi-fast-links{
+ 	display: none;
+}
+
+.domi-pasos-descktop{
+		display: none;
+}
+
+.domi-apps-desktop{
+	display: none;
+}
+
+.domi-links{
+	display: none;
+}
+
+
+
+.domi-navigator{
+	background: black;	
+	display: none;
+	padding: 20px 0px 0px 10px;
+	margin: 0px 0px 0px 0px; 
+}
+
+.domi-navigator ul {
+	list-style: none;
+	padding: 0px;
+	margin: 0px;
+}
+.domi-navigator ul li {
+	display: inline-block;
+	margin-right: 10px;
+}
+
+.domi-navigator ul li a {
+	display: block;
+	margin-right: 10px;
+	height: 30px;
+	line-height: 30px;
+	color: white;
+	font-size: 1.3em;
+	font-weight: 100;
+}
+
+.domi-navigator ul li a:hover{
+		color: rgba(255,255,255,0.8);
+
+}
+
+
+
+
+
+/*###########*/
+#domi-links{
+	display: none;
+}
+
+
+
+
+
+@media screen and (min-width: 993px){
+	
+	.domi-navigator{
+		display: block;
+	}
+	body{	
+	/*	background: url(../../media/img/mobile/f1.jpg) no-repeat top center fixed; 
+	  -webkit-background-size: cover;
+	  -moz-background-size: cover;
+	  -o-background-size: cover;
+	  background-size: cover;
+	  background-color: red;*/
+	  font-size: 100%;	 
+	}
+
+	#domi-links, #domi-content-restaurantes{
+		display: none !important;	
+	}
+
+	#domi-links2, #domi-content-restaurantes2{
+		display: block;	
+	}
+
+	span.btn-menu-mobile{
+		display: none;
+	}
+	.back{	
+	  background: none;
+	  position: fixed;
+	  left: 0px;
+	  top: 0px;
+	  bottom: 0px;
+	  right: 0px;	  
+	  z-index: 1;
+	}
+
+
+	nav.domi-topnav{
+	  background-color: black;
+	}
+	
+	nav.domi-topnav{
+	  min-height: 70px;
+	  border-bottom: 3px solid white;
+	}
+
+	.domi-fast-links{
+		display: block;
+		position: absolute;
+		right: 0px;
+		padding-right: 20px;
+	}
+
+	.domi-fast-links ul{
+		margin-top: 15px;
+		list-style: none;
+		font-size: 1.5em;
+		color: white;
+	}
+
+	.domi-fast-links ul li{
+		display: inline-block;	
+		margin-right: 10px;
+	}
+
+	.domi-fast-links ul li a{
+		display: block;
+		color: white;	
+	}
+	.domi-fast-links ul li a:hover{
+		display: block;
+		color: rgba(255,255,255,0.8);	
+	}
+
+	.domi-logo{
+		margin-top: 15px;
+	}
+	
+	header.domi-header{
+		
+	}
+	
+	header.domi-header h1{
+		font-size: 5em;
+		text-shadow: 3px 3px 3px black;
+		-web-kit-text-shadow: 3px 3px 3px black;
+		-moz-text-shadow: 3px 3px 3px black;
+		-o-text-shadow: 3px 3px 3px black;
+	}
+	.domi-header-text, .domi-header-busqueda-title{
+		font-size: 3em;
+		color: white;
+		text-shadow: 3px 3px 3px black;
+		-web-kit-text-shadow: 3px 3px 3px black;
+		-moz-text-shadow: 3px 3px 3px black;
+		-o-text-shadow: 3px 3px 3px black;
+		margin-bottom: 30px;
+	}
+
+	header .domi-header-busqueda{
+		width: 600px;
+		
+	}
+	header .domi-header-busqueda-title{
+		font-size: 2.5em;
+	}
+
+	.domi-btn-form{
+		width: auto;
+		padding-left: 70px;
+		padding-right: 20px;
+	}
+
+	/*seccion 1 explicaciÃ³n*/
+
+	.domi-explicacion{
+		background-color:  #AD0000;
+		margin-top: 0px;
+	}
+	.domi-explicacion-title{
+		display: none;
+	}
+
+	.domi-pasos-descktop{
+		display: block;
+		text-align: center;
+		color: white;
+		font-size: 1.3em;
+	}
+
+	.domi-pasos-descktop img{
+		display: block;
+		height: 80px;
+		text-align: center;
+		margin: auto;
+	}
+
+	.domi-apps-desktop{
+		display: block;
+		position: relative;
+		background-color: #FF6600;
+		padding: 10px;
+
+	}	
+
+	.domi-apps-desktop h1{
+		font-size: 3.5em;
+		color: white;
+		font-weight: 900;
+		text-shadow: 3px 3px 3px black;
+		-web-kit-text-shadow: 3px 3px 3px black;
+		-moz-text-shadow: 3px 3px 3px black;
+		-o-text-shadow: 3px 3px 3px black;
+
+	}
+
+	.domi-apps-text{
+		font-size: 3em;
+		color: black;
+		font-weight: 300;
+		
+
+	}
+
+	.domi-links{
+		display: none;
+		padding-top: 100px;
+
+	}
+
+	.domi-credits{ 
+		padding-top: 60px;
+		font-size: 1.6em;
+	}
+	
+	.domi-credits p{ 
+		
+		max-width: 900px;
+		margin: auto;
+	}
+
+	.domi-links{
+		display: block;
+		background-color: #AD0000;		
+		background-image: url(../../media/img/edificios.png); 
+		min-height: 242px;
+
+	}
+	.footer-links{
+		position: absolute;
+		color: white;		
+		bottom: 0px;
+		
+	}
+
+	.footer-links ul{
+		display: inline-block;	
+		list-style: none;
+		margin-right: 20px;
+	}
+
+	.footer-links ul li{
+		border-right: 1px solid white; 
+		display: inline-block;
+
+	}
+
+	 .footer-links ul li a{
+		display: block;
+		padding-left: 10px;
+		padding-right: 10px;
+		color: white;
+		font-size: 1.5em;
+		font-family: arial;
+	}
+
+	.domi-social{
+		color: white;
+		position: relative;
+		bottom: 0px;
+		font-size: 1.5em;
+		display: inline-block;
+	}
+
+	.domi-social a{
+		color: white;		
+		display: inline-block;
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+
+
+	/*OCULTAR PARA DESKTOP*/
+
+	.domi-pasos{
+		display: none;
+	}
+	
+	footer.domi-apps{
+		display: none;
+	}
+
+
+}
+
+.domi-text-mini{
+	font-size: 0.6em;
+	display: block;
+}
+
+
+
+
+@media screen and (max-width: 993px) and (orientation: landscape) {
+
+	.back{	
+	  /*background: url(../../media/img/mobile/f1.jpg) no-repeat center top fixed; */
+	  position: fixed;
+	  left: 0px;
+	  top: 0px;
+	  bottom: 0px;
+	  right: 0px;
+	  background-size:100%  auto ;
+	  z-index: 1;
+	}
+
+}
+
+
+@media screen and (max-width: 450px) {
+
+	.col-xs-5{
+		width: 100% !important;
+	}
+}
+
+
+
+
+
+nav.domi-topnav {
+	    background-color: white;
+	}
+
+
+
+
+
+/*==========================================================*/
+
+.domi-send{
+	  margin-top: 50px !important;
+	  background: white;
+	  border-radius: 5px;
+	  moz-border-radius: 5px;
+	  webkit-border-radius: 5px;
+	  o-border-radius: 5px;
+	  max-width: 556px; 
+	  min-height:500px;
+	  padding: 20px;
+	  margin: auto;
+	  font-size: 1.3em;
+	}
+
+	.domi-send .domi-logo-form{
+	  text-align: center;
+
+	}
+	.domi-send .domi-logo-form img{
+	  width: 250px;
+	  margin: auto;
+	}
+
+	form p input{
+	  width: 100%;
+	  height: 36px;
+	  padding-left:40px;
+	  padding-right:  10px;
+	  padding-top: 3px;
+	  padding-bottom: 3px;
+	  border-radius: 4px;
+	  o-border-radius: 4px;
+	  web-kit-border-radius: 4px;
+	  moz-border-radius: 4px;
+	  border: 1px solid #ddd;
+	  position: relative;
+	  z-index: 500;
+	}
+
+	form p textarea{
+	  width: 100%;
+	  padding-left:40px;
+	  padding-right:  10px;
+	  padding-top: 3px;
+	  padding-bottom: 3px;
+	  border-radius: 4px;
+	  o-border-radius: 4px;
+	  web-kit-border-radius: 4px;
+	  moz-border-radius: 4px;
+	  border: 1px solid #ddd;
+	  position: relative;
+	  z-index: 500;
+	  height: 100px;
+	}
+
+	form p textarea:after, form p input:after{
+	  content: "";
+	  border-right: 1px solid #ddd;
+	  width: 40px;
+	  background-color: red;
+	  position: absolute;
+	  z-index: 1000;
+	}
+
+	form button{
+	  width: 218px;
+	  height: 36px;
+	  text-align: center;
+	  background-color: #C70000;
+	  display: block;
+	  margin: auto;
+	  margin-top: 40px;
+	  line-height: 36px;
+	  border: none;
+	  color: white;
+	}
+
+	#id_name{background-image: url('../img/icon1.png'); background-repeat: no-repeat;}
+	#id_email{background-image: url('../img/icon2.png'); background-repeat: no-repeat;}
+	#id_subject{background-image: url('../img/icon3.png'); background-repeat: no-repeat;}
+	#id_message{background-image: url('../img/icon4.png'); background-repeat: no-repeat;}
+
+
+.domi-gracias{
+
+	text-align: center;
+}
+
+.domi-gracias p {
+
+	text-align: center;
+	margin-top: 40px;
+}
+/* ======================================================= */
+
+
+#domi-gracias{
+	width: 90%;
+	background-color: white;
+	height: 90%;
+	padding: 5px;
+		-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-o-border-radius: 10px;
+	border-radius: 10px;
+	margin: auto;
+	margin-bottom: 20px;
+
+
+}
+
+#domi-gracias h2{
+	
+	margin-bottom: 20px;
+
+}
+
+#domi-gracias h4{
+	
+	text-align: left;
+
+}
+
+.domi-center{
+	text-align: center;
+	margin-top: 30px;
+}

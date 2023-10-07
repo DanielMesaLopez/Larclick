@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,700,700i|Roboto');
+
+.miestilo {display:none;}
+
+.planel{    
+    font-size: 25px;
+     font-family: 'Roboto';
+    
+}
+
+.logo_mim{
+    height: 65px;
+    padding: 20px;
+    margin-top: 28px;
+    background: #be0cc5;
+    color: white;
+    cursor: default;
+    position: relative;
+}
+
+.logo_mimo{
+    height: 65px;
+    padding: 20px;
+    background: #be0cc5;
+    color: white;
+    cursor: default;
+    position: relative;
+}
+

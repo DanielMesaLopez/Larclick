@@ -1,0 +1,33 @@
+
+
+.font-impact{
+		font-family: impact, arial;
+}
+
+
+.font-red{
+	color: #FFF; 
+}
+
+
+.font-red {
+    color: #FFF;
+    margin-top: 0px !important;
+}
+
+
+
+
+.font-red{
+text-align: center;
+}
+
+#contenedor{
+	width: 100%;
+	padding-left: 50px;
+}
+img {
+	max-width: 100%;
+
+}
+
